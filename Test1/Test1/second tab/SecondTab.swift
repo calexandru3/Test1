@@ -1,0 +1,35 @@
+//
+//  SecondTab.swift
+//  Test1
+//
+//  Created by Cojocaru Ionut Alexandru on 12/2/19.
+//  Copyright © 2019 Cojocaru Ionut Alexandru. All rights reserved.
+//
+
+import UIKit
+
+class SecondTab: UIViewController {
+    
+    
+    @IBOutlet weak var NameTextField: UITextField!
+    @IBOutlet weak var typeField: UITextField!
+    @IBOutlet weak var expDateField: UITextField!
+    @IBOutlet weak var cardNumberField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationItem.title = "Nav 2"
+    }
+    
+    @IBAction func buttonClick(_ sender: Any) {
+        let controller = CardViewVC()
+        let cardModel = CardModel.init(name: NameTextField.text != nil ? NameTextField.text! : "",
+                                       password: passwordField.text != nil ? passwordField.text! : "",
+                                       expDate: expDateField.text != nil ? expDateField.text! : "",
+                                       cardNumber: cardNumberField.text != nil ? cardNumberField.text! : "",
+                                       type: typeField.text != nil ? typeField.text! : "")
+        controller.cardModel = cardModel
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+}

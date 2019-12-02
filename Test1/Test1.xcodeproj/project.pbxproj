@@ -29,6 +29,8 @@
 		85EB8A4E2395555C00E36E57 /* ProgramaticViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EB8A4D2395555C00E36E57 /* ProgramaticViews.swift */; };
 		85EB8A50239558B800E36E57 /* ThirdNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EB8A4F239558B800E36E57 /* ThirdNav.swift */; };
 		85EB8A522395591C00E36E57 /* LastNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EB8A512395591C00E36E57 /* LastNav.swift */; };
+		85EB8A552395AEC400E36E57 /* CardTypePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EB8A542395AEC400E36E57 /* CardTypePickerViewController.swift */; };
+		85EB8A572395AF1F00E36E57 /* DatePikerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EB8A562395AF1F00E36E57 /* DatePikerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		85EB8A4D2395555C00E36E57 /* ProgramaticViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramaticViews.swift; sourceTree = "<group>"; };
 		85EB8A4F239558B800E36E57 /* ThirdNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdNav.swift; sourceTree = "<group>"; };
 		85EB8A512395591C00E36E57 /* LastNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastNav.swift; sourceTree = "<group>"; };
+		85EB8A542395AEC400E36E57 /* CardTypePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypePickerViewController.swift; sourceTree = "<group>"; };
+		85EB8A562395AF1F00E36E57 /* DatePikerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePikerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +189,7 @@
 				85D1574123953FF200A032BB /* SecondTab.swift */,
 				85EB8A4123954A9600E36E57 /* CardViewVC.swift */,
 				85D157452395430000A032BB /* card view */,
+				85EB8A532395AE9C00E36E57 /* pikers */,
 			);
 			path = "second tab";
 			sourceTree = "<group>";
@@ -216,6 +221,15 @@
 				85EB8A4F239558B800E36E57 /* ThirdNav.swift */,
 			);
 			path = "third tab";
+			sourceTree = "<group>";
+		};
+		85EB8A532395AE9C00E36E57 /* pikers */ = {
+			isa = PBXGroup;
+			children = (
+				85EB8A542395AEC400E36E57 /* CardTypePickerViewController.swift */,
+				85EB8A562395AF1F00E36E57 /* DatePikerViewController.swift */,
+			);
+			path = pikers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,12 +365,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				85D1573923952A4D00A032BB /* CustomPageViewController.swift in Sources */,
+				85EB8A552395AEC400E36E57 /* CardTypePickerViewController.swift in Sources */,
 				85EB8A522395591C00E36E57 /* LastNav.swift in Sources */,
 				85D1570723951C7700A032BB /* AppDelegate.swift in Sources */,
 				85D1574223953FF200A032BB /* SecondTab.swift in Sources */,
 				85D1573B23952B5D00A032BB /* PageModel.swift in Sources */,
 				85EB8A50239558B800E36E57 /* ThirdNav.swift in Sources */,
 				85EB8A4B239554C600E36E57 /* ChildView.swift in Sources */,
+				85EB8A572395AF1F00E36E57 /* DatePikerViewController.swift in Sources */,
 				85D15744239541E600A032BB /* Nav2.swift in Sources */,
 				85EB8A3E239543DD00E36E57 /* CardView.swift in Sources */,
 				85D1570923951C7700A032BB /* SceneDelegate.swift in Sources */,

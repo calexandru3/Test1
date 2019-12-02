@@ -20,41 +20,53 @@ class ProgramaticViews: UIViewController {
     
     @IBAction func ButtonCliked(_ sender: Any) {
         if views.isEmpty {
-            let view = UIView()
-            view.translatesAutoresizingMaskIntoConstraints = false
-            view.backgroundColor = .random
-            self.view.addSubview(view)
-            
-            view.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
-            view.centerXAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerXAnchor).isActive = true
-            view.widthAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.widthAnchor, multiplier: 0.8).isActive = true
-            view.heightAnchor.constraint(equalToConstant: 50).isActive = true
-            views.append(view)
+            case1()
         } else if views.count == 5{
-            let alert = UIAlertController(title: "Max Number", message: "You can`t add more views :(", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-            
-            alert.addAction(UIAlertAction(title: "Restore", style: .default, handler: { action in
-                self.view.subviews.forEach({
-                    if type(of: $0) != UIButton.self {
-                        $0.removeFromSuperview()
-                    }
-                })
-                self.views.removeAll()
-            }))
-            self.present(alert, animated: true)
+            case2()
         } else {
-            let view = UIView()
-            view.translatesAutoresizingMaskIntoConstraints = false
-            view.backgroundColor = .random
-            self.view.addSubview(view)
-            
-            view.topAnchor.constraint(equalTo: views.last!.bottomAnchor, constant: 20).isActive = true
-            view.centerXAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerXAnchor).isActive = true
-            view.widthAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.widthAnchor, multiplier: 0.8).isActive = true
-            view.heightAnchor.constraint(equalToConstant: 50).isActive = true
-            views.append(view)
+            case3()
         }
+    }
+    
+    fileprivate func case1(){
+        let view = UIView()
+         view.translatesAutoresizingMaskIntoConstraints = false
+         view.backgroundColor = .random
+         self.view.addSubview(view)
+         
+         view.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+         view.centerXAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerXAnchor).isActive = true
+         view.widthAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.widthAnchor, multiplier: 0.8).isActive = true
+         view.heightAnchor.constraint(equalToConstant: 50).isActive = true
+         views.append(view)
+    }
+    
+    fileprivate func case2(){
+        let alert = UIAlertController(title: "Max Number", message: "You can`t add more views :(", preferredStyle: .alert)
+         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+         
+         alert.addAction(UIAlertAction(title: "Restore", style: .default, handler: { action in
+             self.view.subviews.forEach({
+                 if type(of: $0) != UIButton.self {
+                     $0.removeFromSuperview()
+                 }
+             })
+             self.views.removeAll()
+         }))
+         self.present(alert, animated: true)
+    }
+    
+    fileprivate func case3(){
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .random
+        self.view.addSubview(view)
+        
+        view.topAnchor.constraint(equalTo: views.last!.bottomAnchor, constant: 20).isActive = true
+        view.centerXAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerXAnchor).isActive = true
+        view.widthAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.widthAnchor, multiplier: 0.8).isActive = true
+        view.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        views.append(view)
     }
 }
 extension UIColor {

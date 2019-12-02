@@ -12,7 +12,7 @@ class PageModel: UIViewController {
     
     var tag:Int = 0{
         didSet {
-            label.text = "Welcome frome page \(tag)"
+            label.text = "Welcome from page \(tag)"
         }
     }
     

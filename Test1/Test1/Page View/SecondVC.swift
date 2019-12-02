@@ -12,7 +12,8 @@ class SecondVC: UIViewController {
     
     var tag:Int = 0{
         didSet {
-            label.text = "Welcome frome page \(tag)"
+            label.text = "Welcome from page \(tag)"
+            self.navigationItem.title = "VC \(tag)"
         }
     }
     

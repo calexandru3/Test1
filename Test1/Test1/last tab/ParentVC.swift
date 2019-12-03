@@ -36,7 +36,7 @@ class ParentVC: UIViewController {
         if (segue.identifier == segues.childView.rawValue) {
             if segue.destination is ChildView {
                 let VC = segue.destination as! ChildView
-                VC.view.backgroundColor = .black
+                VC.view.backgroundColor = .orange
             }
         }
     }

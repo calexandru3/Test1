@@ -73,8 +73,8 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txj-gm-dMt">
-                            <rect key="frame" x="185" y="178" width="102" height="40"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txj-gm-dMt">
+                            <rect key="frame" x="185" y="178" width="181" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                             <nil key="textColor"/>
@@ -98,7 +98,7 @@
                 <outlet property="password" destination="Yhq-ag-bJP" id="oP8-xe-YUe"/>
                 <outlet property="type" destination="p7f-7d-vuH" id="oeH-FY-2pJ"/>
             </connections>
-            <point key="canvasLocation" x="135" y="514"/>
+            <point key="canvasLocation" x="134.78260869565219" y="513.61607142857144"/>
         </view>
     </objects>
 </document>
